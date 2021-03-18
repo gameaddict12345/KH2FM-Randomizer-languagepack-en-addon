@@ -1,0 +1,32 @@
+title: English language pack Add-On for Rando
+originalAuthor: OpenKH open-source assets
+description: Generate English game files. This mod is mainly useful to translate your PlayStation 2 copy of Kingdom Hearts II from any language to English.
+assets:
+  - name: msg/us/sys.bar
+    method: binarc
+    source:
+      - name: sys
+        type: list
+        method: kh2msg
+        source:
+          - name: msg/sys.yml
+            language: en
+      - name: md_m
+        type: imgd
+        method: copy
+        source:
+          - name: msg/md_m/dummy
+  - name: msg/us/hb.bar
+    method: binarc
+    source:
+      - name: sys
+        type: list
+        method: kh2msg
+        source:
+          - name: msg/hb.yml
+            language: en
+      - name: md_m
+        type: imgd
+        method: imgd
+        source:
+          - name: msg/md_m/hb.png
